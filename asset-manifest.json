@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fuzzing_taxonomy/static/css/main.150365ba.css",
+    "main.js": "/fuzzing_taxonomy/static/js/main.aa95591c.js",
+    "static/js/453.e5407da2.chunk.js": "/fuzzing_taxonomy/static/js/453.e5407da2.chunk.js",
+    "index.html": "/fuzzing_taxonomy/index.html",
+    "main.150365ba.css.map": "/fuzzing_taxonomy/static/css/main.150365ba.css.map",
+    "main.aa95591c.js.map": "/fuzzing_taxonomy/static/js/main.aa95591c.js.map",
+    "453.e5407da2.chunk.js.map": "/fuzzing_taxonomy/static/js/453.e5407da2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.150365ba.css",
+    "static/js/main.aa95591c.js"
+  ]
+}
