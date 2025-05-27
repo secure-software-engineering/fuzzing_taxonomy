@@ -17,7 +17,7 @@ function App() {
   const [relatedDataMap, setRelatedDataMap] = useState({});
 
   useEffect(() => {
-    fetch("inputs_none.yaml")
+    fetch("inputs_all.yaml")
       .then(response => response.text())
       .then(text => {
         const parsedData = yaml.load(text);
@@ -298,8 +298,8 @@ function App() {
                   filteredDataAnalysis={filteredDataAnalysis} 
                   relatedDataMap={relatedDataMap}
                 /> : (
-                  // <p className="text-muted text-center">Please select one or more stage(s) and task type.</p>
-                  <h1 className="text-muted text-center">Website under construction. Stay tuned!</h1>
+                  <p className="text-muted text-center">Please select one or more stage(s) and task type.</p>
+                  // <h1 className="text-muted text-center">Website under construction. Stay tuned!</h1>
                 )}
             </div>
           </div>
