@@ -1,0 +1,591 @@
+Sheet1:
+- Task ID: 5
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>mutation timeline</strong> - refers to geneology of a mutant tracing back to the original initial seed. in each generation, the corresponding mutation operators should also be recorded</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>5</strong>
+  Stage(s): Initial Seeds, Mutations, Execution
+  Task type: Time-dependent
+  Type of data analysis: Visualize the <u>mutation timeline</u> of the initial seeds along with their corresponding <u>interesting behaviors</u>
+- Task ID: 13
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule, Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>13</strong>
+  Stage(s): Power Schedule, Mutations, Execution
+  Task type: Distribution
+  Type of data analysis: Percentage of <u>energy assignment</u>s used by each selected seed measured in terms of <u>interesting behaviors</u>
+- Task ID: 1
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>instrumented-code coverage</strong> - runtime coverage of the statements added to the target by the instrumentation</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>1</strong>
+  Stage(s): Instrumentation, Mutations, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>instrumented-code coverage</u> among different mutants (data can be collected from a single fuzzing run)
+- Task ID: 8
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>selection frequency</strong> - refers to the number of times a seed is selected by the search strategy during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>8</strong>
+  Stage(s): Initial Seeds, Search Strategy, Execution
+  Task type: Distribution
+  Type of data analysis: Distribution of <u>selection frequency</u> among similar seeds measured in terms of <u>interesting behaviors</u> (data is collected from a single fuzzing run)
+- Task ID: 7
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>7</strong>
+  Stage(s): Initial Seeds, Search Strategy, Execution
+  Task type: Distribution
+  Type of data analysis: Distribution of <u>energy assignment</u>s for each initial seed and their corresponding mutants 
+- Task ID: 9
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>selection orders</strong> - refers to the order in which a mutant is selected by the search strategy relative to the other seeds in the corpus during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>9</strong>
+  Stage(s): Initial Seeds, Search Strategy, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>selection orders</u> and <u>interesting behaviors</u> of different initial seed sets (data is collected from multiple fuzzing runs with varying initial seeds) 
+- Task ID: 14
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule, Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>14</strong>
+  Stage(s): Power Schedule, Mutations, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>energy assignment</u>s, <u>mutation operator</u>s and the corresponding <u>interesting behaviors</u>
+- Task ID: 101
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li><li><strong>selection orders</strong> - refers to the order in which a mutant is selected by the search strategy relative to the other seeds in the corpus during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule, Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>101</strong>
+  Stage(s): Power Schedule, Search Strategy, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>energy assignment</u>s, <u>selection orders</u> and <u>interesting behaviors</u> for a fraction of seeds in the corpus
+- Task ID: 12
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li><li><strong>selection orders</strong> - refers to the order in which a mutant is selected by the search strategy relative to the other seeds in the corpus during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule, Search Strategy, Mutations</strong><br /><i>Task ID in the paper - </i><strong>12</strong>
+  Stage(s): Power Schedule, Search Strategy, Mutations
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>energy assignment</u>s, <u>selection orders</u> and <u>interesting behaviors</u> among all seeds in the corpus
+- Task ID: 10
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>selection orders</strong> - refers to the order in which a mutant is selected by the search strategy relative to the other seeds in the corpus during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>10</strong>
+  Stage(s): Initial Seeds, Search Strategy, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between different <u>selection orders</u> of initial seeds and <u>interesting behaviors</u> (data is collected from multiple fuzzing runs with same initial seeds and different search strategies) 
+- Task ID: 100
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>100</strong>
+  Stage(s): Initial Seeds, Mutations, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> between initial seeds and their corresponding mutants (data can be collected from a single fuzzing run) 
+- Task ID: 6
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Power Schedule, Execution</strong><br /><i>Task ID in the paper - </i><strong>6</strong>
+  Stage(s): Initial Seeds, Power Schedule, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>energy assignment</u>s of initial seeds and the fuzzing throughput in terms of execution speed (data can be collected from a single fuzzing run)
+- Task ID: 2
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>instrumentation type</strong> - refers to the type of instrumentation performed on the target (edge coverage, address sanitizer, or custom instrumentation strategy)</li><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Instrumentation, Execution</strong><br /><i>Task ID in the paper - </i><strong>2</strong>
+  Stage(s): Initial Seeds, Instrumentation, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>interesting behaviors</u> of initial seeds and <u>instrumentation type</u> (<u>interesting behaviors</u> of the same initial seeds should be collected from multiple fuzzing runs with varying <u>instrumentation type</u>s)
+- Task ID: 3
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>3</strong>
+  Stage(s): Initial Seeds, Mutations, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> between different initial seed sets and their corresponding mutants (data can be collected from multiple fuzzing runs with varying initial seeds)
+- Task ID: 11
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>11</strong>
+  Stage(s): Search Strategy, Mutations, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>mutation operator</u>s and <u>interesting behaviors</u> for different search strategies (data is collected from multiple fuzzing runs with varying search strategies)
+- Task ID: 102
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>instrumentation type</strong> - refers to the type of instrumentation performed on the target (edge coverage, address sanitizer, or custom instrumentation strategy)</li><li><strong>seed corpus size</strong> - refers to the size of the seed corpus measured in terms of number of seeds added to the corpus</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Search Strategy</strong><br /><i>Task ID in the paper - </i><strong>102</strong>
+  Stage(s): Instrumentation, Search Strategy
+  Task type: Time-dependent
+  Type of data analysis: Analyze the <u>seed corpus size</u> across different <u>instrumentation type</u>s over time
+- Task ID: 15
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>instrumentation type</strong> - refers to the type of instrumentation performed on the target (edge coverage, address sanitizer, or custom instrumentation strategy)</li><li><strong>selection orders</strong> - refers to the order in which a mutant is selected by the search strategy relative to the other seeds in the corpus during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Search Strategy</strong><br /><i>Task ID in the paper - </i><strong>15</strong>
+  Stage(s): Instrumentation, Search Strategy
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>instrumentation type</u>s and <u>selection orders</u> (data is collected from multiple fuzzing runs with different <u>instrumentation type</u>s)
+- Task ID: 103
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>selection orders</strong> - refers to the order in which a mutant is selected by the search strategy relative to the other seeds in the corpus during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Search Strategy</strong><br /><i>Task ID in the paper - </i><strong>103</strong>
+  Stage(s): Instrumentation, Search Strategy
+  Task type: Relationship
+  Type of data analysis: Relationship between instrumented code blocks and <u>selection orders</u> 
+- Task ID: 16
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>instrumentation type</strong> - refers to the type of instrumentation performed on the target (edge coverage, address sanitizer, or custom instrumentation strategy)</li><li><strong>seed corpus size</strong> - refers to the size of the seed corpus measured in terms of number of seeds added to the corpus</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Search Strategy</strong><br /><i>Task ID in the paper - </i><strong>16</strong>
+  Stage(s): Instrumentation, Search Strategy
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>instrumentation type</u>s and <u>seed corpus size</u> (data is collected from multiple fuzzing runs with different <u>instrumentation type</u>s) 
+- Task ID: 17
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>instrumentation type</strong> - refers to the type of instrumentation performed on the target (edge coverage, address sanitizer, or custom instrumentation strategy)</li><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Power Schedule</strong><br /><i>Task ID in the paper - </i><strong>17</strong>
+  Stage(s): Instrumentation, Power Schedule
+  Task type: Relationship
+  Type of data analysis: Relationship between different <u>instrumentation type</u>s and <u>energy assignment</u>s (data is collected from multiple fuzzing runs with different <u>instrumentation type</u>s) 
+- Task ID: 18
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>instrumentation type</strong> - refers to the type of instrumentation performed on the target (edge coverage, address sanitizer, or custom instrumentation strategy)</li><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Mutations</strong><br /><i>Task ID in the paper - </i><strong>18</strong>
+  Stage(s): Instrumentation, Mutations
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>mutation operator</u>s and different <u>instrumentation type</u>s (data is collected from multiple fuzzing runs with different <u>instrumentation type</u>s) 
+- Task ID: 19
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Execution</strong><br /><i>Task ID in the paper - </i><strong>19</strong>
+  Stage(s): Instrumentation, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> between instrumented and uninstrumented target (data is collected from two fuzzing runs in which one of the run uses uninstrumented target)
+- Task ID: 104
+  Related data: </p><i>Involved internal stages - </i><strong>Instrumentation, Execution</strong><br /><i>Task ID in the paper - </i><strong>104</strong>
+  Stage(s): Instrumentation, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of code coverage between instrumented and non-instrumented targets
+- Task ID: 106
+  Related data: </p><i>Involved internal stages - </i><strong>Instrumentation, Execution</strong><br /><i>Task ID in the paper - </i><strong>106</strong>
+  Stage(s): Instrumentation, Execution
+  Task type: Direct
+  Type of data analysis: Visualize the overhead of instrumentation 
+- Task ID: 20
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>instrumentation type</strong> - refers to the type of instrumentation performed on the target (edge coverage, address sanitizer, or custom instrumentation strategy)</li><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Execution</strong><br /><i>Task ID in the paper - </i><strong>20</strong>
+  Stage(s): Instrumentation, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of the <u>interesting behaviors</u> across different <u>instrumentation type</u>s (data is collected from multiple fuzzin runs with different <u>instrumentation type</u>s) 
+- Task ID: 105
+  Related data: </p><i>Involved internal stages - </i><strong>Instrumentation, Execution</strong><br /><i>Task ID in the paper - </i><strong>105</strong>
+  Stage(s): Instrumentation, Execution
+  Task type: Direct
+  Type of data analysis: Comparison of compilation and execution time between instrumented and uninstrumented target
+- Task ID: 21
+  Related data: </p><i>Involved internal stages - </i><strong>Instrumentation, Execution</strong><br /><i>Task ID in the paper - </i><strong>21</strong>
+  Stage(s): Instrumentation, Execution
+  Task type: Time-dependent
+  Type of data analysis: Visualize different runtime coverage measurements over time (data is collected from a single fuzzing run in which a target is instrumentation to extract multiple coverage measurements)
+- Task ID: 22
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>instrumented-code coverage</strong> - runtime coverage of the statements added to the target by the instrumentation</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Execution</strong><br /><i>Task ID in the paper - </i><strong>22</strong>
+  Stage(s): Instrumentation, Execution
+  Task type: Direct
+  Type of data analysis: Visualize the mapping between  <u>instrumented-code coverage</u> and the corresponding source code (data is collected from a single fuzzing run)
+- Task ID: 23
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>instrumented-code coverage</strong> - runtime coverage of the statements added to the target by the instrumentation</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Execution</strong><br /><i>Task ID in the paper - </i><strong>23</strong>
+  Stage(s): Instrumentation, Execution
+  Task type: Distribution
+  Type of data analysis: Percentage of <u>instrumented-code coverage</u> that is failed to execute at runtime (data is collected from a single fuzzing run)
+- Task ID: 24
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>instrumented program parts</strong> - refers to the source code regions where new statements are added to the target by the instrumentation</li><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Instrumentation, Execution</strong><br /><i>Task ID in the paper - </i><strong>24</strong>
+  Stage(s): Instrumentation, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>instrumented program parts</u> and <u>interesting behaviors</u> (data is collected from a single fuzzing run) 
+- Task ID: 25
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>selection frequency</strong> - refers to the number of times a seed is selected by the search strategy during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Search Strategy</strong><br /><i>Task ID in the paper - </i><strong>25</strong>
+  Stage(s): Initial Seeds, Search Strategy
+  Task type: Direct
+  Type of data analysis: Visualize the <u>selection frequency</u> of the initial seeds across different search strategies (data is collected from multiple fuzzing runs with same initial seeds and different search strategies)
+- Task ID: 107
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Power Schedule</strong><br /><i>Task ID in the paper - </i><strong>107</strong>
+  Stage(s): Initial Seeds, Power Schedule
+  Task type: Distribution
+  Type of data analysis: Distribution of <u>energy assignment</u>s among initial seeds 
+- Task ID: 26
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Power Schedule</strong><br /><i>Task ID in the paper - </i><strong>26</strong>
+  Stage(s): Initial Seeds, Power Schedule
+  Task type: Relationship
+  Type of data analysis: Relationship between initial seeds and their <u>energy assignment</u>s (data is collected from a single fuzzing run)
+- Task ID: 27
+  Related data: </p><i>Involved internal stages - </i><strong>Initial Seeds, Mutations</strong><br /><i>Task ID in the paper - </i><strong>27</strong>
+  Stage(s): Initial Seeds, Mutations
+  Task type: Comparison
+  Type of data analysis: Comparison between the mutated parts among initial seeds (data is collected from a single fuzzing run)
+- Task ID: 28
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Mutations</strong><br /><i>Task ID in the paper - </i><strong>28</strong>
+  Stage(s): Initial Seeds, Mutations
+  Task type: Distribution
+  Type of data analysis: Distribution of <u>mutation operator</u>s among initial seeds (data is collected from a single fuzzing run) 
+- Task ID: 29
+  Related data: </p><i>Involved internal stages - </i><strong>Initial Seeds, Mutations</strong><br /><i>Task ID in the paper - </i><strong>29</strong>
+  Stage(s): Initial Seeds, Mutations
+  Task type: Relationship
+  Type of data analysis: Relationship between initial seeds and their corresponding mutants (data is collected from a single fuzzing run) 
+- Task ID: 4
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>4</strong>
+  Stage(s): Initial Seeds, Mutations, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> among initial seeds 
+- Task ID: 30
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Execution</strong><br /><i>Task ID in the paper - </i><strong>30</strong>
+  Stage(s): Initial Seeds, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> between different initial seed sets (data is collected from multiple fuzzing runs with varying initial seeds) 
+- Task ID: 108
+  Related data: </p><i>Involved internal stages - </i><strong>Initial Seeds, Execution</strong><br /><i>Task ID in the paper - </i><strong>108</strong>
+  Stage(s): Initial Seeds, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of code coverage between initial seed set and an empty seed
+- Task ID: 31
+  Related data: </p><i>Involved internal stages - </i><strong>Initial Seeds, Execution</strong><br /><i>Task ID in the paper - </i><strong>31</strong>
+  Stage(s): Initial Seeds, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison between coverage of initial seeds and relative coverage of other mutants over time (data is collected from a single fuzzing runs)
+- Task ID: 32
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Execution</strong><br /><i>Task ID in the paper - </i><strong>32</strong>
+  Stage(s): Initial Seeds, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> between initial seeds and minimized corpus of initial seeds (data is collected from different fuzzing runs with varied corpus minimization techniques)
+- Task ID: 33
+  Related data: </p><i>Involved internal stages - </i><strong>Initial Seeds, Execution</strong><br /><i>Task ID in the paper - </i><strong>33</strong>
+  Stage(s): Initial Seeds, Execution
+  Task type: Direct
+  Type of data analysis: Visualize the source code regions that are not covered by the initial seeds at runtime (no fuzzing run is requried and data is collected from executing initial seeds on the target)
+- Task ID: 34
+  Related data: </p><i>Involved internal stages - </i><strong>Initial Seeds, Execution</strong><br /><i>Task ID in the paper - </i><strong>34</strong>
+  Stage(s): Initial Seeds, Execution
+  Task type: Distribution
+  Type of data analysis: Distribution of code coverage across different initial seed sets (data is collected from multiple fuzzing runs with different initial seeds)
+- Task ID: 35
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>input properties</strong> - refers to properties of input such as the length, path coverage, protocol sequence covered by the input when executed on the target, etc</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Execution</strong><br /><i>Task ID in the paper - </i><strong>35</strong>
+  Stage(s): Initial Seeds, Execution
+  Task type: Distribution
+  Type of data analysis: Distribution of <u>input properties</u> among seeds (data is collected from a single fuzzing runs)
+- Task ID: 36
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>seed corpus size</strong> - refers to the size of the seed corpus measured in terms of number of seeds added to the corpus</li></ul></p><i>Involved internal stages - </i><strong>Initial Seeds, Execution</strong><br /><i>Task ID in the paper - </i><strong>36</strong>
+  Stage(s): Initial Seeds, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between initial seed sets and <u>seed corpus size</u> (data is collected from multiple fuzzing runs with different initial seed sets)
+- Task ID: 37
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Power Schedule</strong><br /><i>Task ID in the paper - </i><strong>37</strong>
+  Stage(s): Search Strategy, Power Schedule
+  Task type: Distribution
+  Type of data analysis: Distribution of <u>energy assignment</u> for each selected seed (data is collected from a single fuzzing run)
+- Task ID: 38
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li><li><strong>selection orders</strong> - refers to the order in which a mutant is selected by the search strategy relative to the other seeds in the corpus during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Power Schedule</strong><br /><i>Task ID in the paper - </i><strong>38</strong>
+  Stage(s): Search Strategy, Power Schedule
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>selection orders</u> and <u>energy assignment</u>s (data is collected from a single fuzzing run) 
+- Task ID: 39
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li><li><strong>selection frequency</strong> - refers to the number of times a seed is selected by the search strategy during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Power Schedule</strong><br /><i>Task ID in the paper - </i><strong>39</strong>
+  Stage(s): Search Strategy, Power Schedule
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>selection frequency</u> and <u>energy assignment</u>s (data is collected from a single fuzzing run)
+- Task ID: 40
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li><li><strong>selection orders</strong> - refers to the order in which a mutant is selected by the search strategy relative to the other seeds in the corpus during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Mutations</strong><br /><i>Task ID in the paper - </i><strong>40</strong>
+  Stage(s): Search Strategy, Mutations
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>selection orders</u> and <u>mutation operator</u>s (data is collected from single fuzzing run) 
+- Task ID: 41
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li><li><strong>selection frequency</strong> - refers to the number of times a seed is selected by the search strategy during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Mutations</strong><br /><i>Task ID in the paper - </i><strong>41</strong>
+  Stage(s): Search Strategy, Mutations
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>selection frequency</u> and <u>mutation operator</u>s (data is collected from a single fuzzing run)
+- Task ID: 42
+  Related data: </p><i>Involved internal stages - </i><strong>Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>42</strong>
+  Stage(s): Search Strategy, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of runtime seed distances to configured source code locations between selected seeds (data is collected from a single fuzzing run)
+- Task ID: 43
+  Related data: </p><i>Involved internal stages - </i><strong>Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>43</strong>
+  Stage(s): Search Strategy, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of time taken to select a seed by the search strategy with the overall fuzzing time (data is collected from a single fuzzing run)
+- Task ID: 44
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>44</strong>
+  Stage(s): Search Strategy, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> of fraction of seeds across search strategies (data is collected from multiple fuzzing runs with different search strategies)
+- Task ID: 45
+  Related data: </p><i>Involved internal stages - </i><strong>Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>45</strong>
+  Stage(s): Search Strategy, Execution
+  Task type: Direct
+  Type of data analysis: Visualize the time taken to execute all inputs in the corpus (data is collected from a signle fuzzing run)
+- Task ID: 46
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>selection orders</strong> - refers to the order in which a mutant is selected by the search strategy relative to the other seeds in the corpus during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>46</strong>
+  Stage(s): Search Strategy, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>selection orders</u> and <u>interesting behaviors</u> among all seeds (data is collected from a single fuzzing run) 
+- Task ID: 47
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>selection orders</strong> - refers to the order in which a mutant is selected by the search strategy relative to the other seeds in the corpus during the fuzzing campaign</li><li><strong>filtered seeds</strong> - refers to the mutants that are not added back to the corpus during execution</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>47</strong>
+  Stage(s): Search Strategy, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>selection orders</u> and <u>filtered seeds</u> (data is collected from a single fuzzing run)
+- Task ID: 48
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>selection frequency</strong> - refers to the number of times a seed is selected by the search strategy during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>48</strong>
+  Stage(s): Search Strategy, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>selection frequency</u> and <u>interesting behaviors</u> (datat is collected from a single fuzzing run)
+- Task ID: 49
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>seed corpus size</strong> - refers to the size of the seed corpus measured in terms of number of seeds added to the corpus</li><li><strong>selection frequency</strong> - refers to the number of times a seed is selected by the search strategy during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>49</strong>
+  Stage(s): Search Strategy, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>selection frequency</u> and the <u>seed corpus size</u> (data is collected from a single fuzzing run) 
+- Task ID: 50
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>seed corpus size</strong> - refers to the size of the seed corpus measured in terms of number of seeds added to the corpus</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>50</strong>
+  Stage(s): Search Strategy, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>seed corpus size</u> and <u>interesting behaviors</u> overtime (data is collected from a single fuzzing run)
+- Task ID: 51
+  Related data: </p><i>Involved internal stages - </i><strong>Search Strategy, Execution</strong><br /><i>Task ID in the paper - </i><strong>51</strong>
+  Stage(s): Search Strategy, Execution
+  Task type: Time-dependent
+  Type of data analysis: Visualize the duration of uninteresting seeds in the corpus overtime (data is collected from a single fuzzing run)
+- Task ID: 52
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule, Mutations</strong><br /><i>Task ID in the paper - </i><strong>52</strong>
+  Stage(s): Power Schedule, Mutations
+  Task type: Distribution
+  Type of data analysis: Distribution of <u>energy assignment</u> for each mutant and each <u>mutation operator</u> (data is collected from a single fuzzing run) 
+- Task ID: 53
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule, Mutations</strong><br /><i>Task ID in the paper - </i><strong>53</strong>
+  Stage(s): Power Schedule, Mutations
+  Task type: Distribution
+  Type of data analysis: Distribution of <u>mutation operator</u>s across different <u>energy assignment</u>s (data is collected from multiple fuzzing runs with different power schedules) 
+- Task ID: 54
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule, Mutations</strong><br /><i>Task ID in the paper - </i><strong>54</strong>
+  Stage(s): Power Schedule, Mutations
+  Task type: Relationship
+  Type of data analysis: Relationship between execution frequency of the mutant and the corresponding <u>energy assignment</u> (data is collected from a single fuzzing run)
+- Task ID: 109
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule, Mutations</strong><br /><i>Task ID in the paper - </i><strong>109</strong>
+  Stage(s): Power Schedule, Mutations
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>energy assignment</u>s of the seeds and the <u>mutation operator</u>s 
+- Task ID: 110
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule, Execution</strong><br /><i>Task ID in the paper - </i><strong>110</strong>
+  Stage(s): Power Schedule, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>energy assignment</u>s and <u>interesting behaviors</u> 
+- Task ID: 55
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li><li><strong>filtered seeds</strong> - refers to the mutants that are not added back to the corpus during execution</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule, Execution</strong><br /><i>Task ID in the paper - </i><strong>55</strong>
+  Stage(s): Power Schedule, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>energy assignment</u>s and <u>filtered seeds</u> (data is collected from a single fuzzing run) 
+- Task ID: 56
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule, Execution</strong><br /><i>Task ID in the paper - </i><strong>56</strong>
+  Stage(s): Power Schedule, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>energy assignment</u>s and interesting behaviours of fraction of seeds (data is collected from a single fuzzing run)
+- Task ID: 57
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>57</strong>
+  Stage(s): Mutations, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> across different <u>mutation operator</u>s (data is collected from a single fuzzing run)
+- Task ID: 112
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>112</strong>
+  Stage(s): Mutations, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of coverage growth rate across different <u>mutation operator</u>s
+- Task ID: 113
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>113</strong>
+  Stage(s): Mutations, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of runtime and resource consumption across different <u>mutation operator</u>s 
+- Task ID: 114
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>114</strong>
+  Stage(s): Mutations, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of runtime, number of mutants generated, time to generate mutants across different <u>mutation operator</u>s
+- Task ID: 58
+  Related data: </p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>58</strong>
+  Stage(s): Mutations, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of the runtime similarity of the seeds and the similarity in terms of the reached source code regions (data is collected from a single fuzzing run)
+- Task ID: 59
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>59</strong>
+  Stage(s): Mutations, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> between a mutant and offsprings (data is collected from a single fuzzing run)
+- Task ID: 60
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation timeline</strong> - refers to geneology of a mutant tracing back to the original initial seed. in each generation, the corresponding mutation operators should also be recorded</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>60</strong>
+  Stage(s): Mutations, Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>mutation timeline</u>s for all seeds (data is collected from a single fuzzing run)
+- Task ID: 111
+  Related data: </p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>111</strong>
+  Stage(s): Mutations, Execution
+  Task type: Direct
+  Type of data analysis: Visualize the time to generate valid mutants and number of valid mutants
+- Task ID: 61
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li><li><strong>filtered seeds</strong> - refers to the mutants that are not added back to the corpus during execution</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>61</strong>
+  Stage(s): Mutations, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>mutation operator</u>s and <u>filtered seeds</u> (data is collected from a single fuzzing run)
+- Task ID: 62
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>62</strong>
+  Stage(s): Mutations, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>mutation operator</u>s and <u>interesting behaviors</u> (data is collected from a single fuzzing run) 
+- Task ID: 63
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>mutation depth</strong> - refers to generation depth in which the corresponding mutation operator is applied to the seed</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>63</strong>
+  Stage(s): Mutations, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>mutation depth</u> and <u>interesting behaviors</u> (data is collected from a single fuzzing run)
+- Task ID: 64
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>64</strong>
+  Stage(s): Mutations, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between the size of the mutation modification and <u>interesting behaviors</u> (data is collected from a single fuzzing run) 
+- Task ID: 65
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>65</strong>
+  Stage(s): Mutations, Execution
+  Task type: Relationship
+  Type of data analysis: Relationhip between <u>mutation operator</u> sequences and <u>interesting behaviors</u> (data is collected from a single fuzzing run) 
+- Task ID: 66
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li><li><strong>mutation families</strong> - a mutation family refers to all mutants that are derived from a seed along with transitively generated mutants</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>66</strong>
+  Stage(s): Mutations, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between each <u>mutation families</u> and <u>interesting behaviors</u> (data is collected from a single fuzzing run) 
+- Task ID: 67
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>67</strong>
+  Stage(s): Mutations, Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between coverage differences between different pairs of mutant and its children across different <u>mutation operator</u>s (data is collected from a single fuzzing run)
+- Task ID: 115
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation timeline</strong> - refers to geneology of a mutant tracing back to the original initial seed. in each generation, the corresponding mutation operators should also be recorded</li></ul></p><i>Involved internal stages - </i><strong>Mutations, Execution</strong><br /><i>Task ID in the paper - </i><strong>115</strong>
+  Stage(s): Mutations, Execution
+  Task type: Time-dependent
+  Type of data analysis: Visualize the <u>mutation timeline</u> along with the corresponding branch coverage for the involved mutants
+- Task ID: 68
+  Related data: </p><i>Involved internal stages - </i><strong>Instrumentation</strong><br /><i>Task ID in the paper - </i><strong>68</strong>
+  Stage(s): Instrumentation
+  Task type: Direct
+  Type of data analysis: Percentage of instrumented code per source code region (no fuzzing run is required for data collection) 
+- Task ID: 69
+  Related data: </p><i>Involved internal stages - </i><strong>Instrumentation</strong><br /><i>Task ID in the paper - </i><strong>69</strong>
+  Stage(s): Instrumentation
+  Task type: Direct
+  Type of data analysis: Number of lines of code are added to the target (no fuzzing run is required for data collection)
+- Task ID: 70
+  Related data: </p><i>Involved internal stages - </i><strong>Instrumentation</strong><br /><i>Task ID in the paper - </i><strong>70</strong>
+  Stage(s): Instrumentation
+  Task type: Direct
+  Type of data analysis: Visualize the instrumented code regions (no fuzzing run is required for data collection)
+- Task ID: 116
+  Related data: </p><i>Involved internal stages - </i><strong>Instrumentation</strong><br /><i>Task ID in the paper - </i><strong>116</strong>
+  Stage(s): Instrumentation
+  Task type: Distribution
+  Type of data analysis: Percentage of instrumented code statements that are syntactically correct
+- Task ID: 71
+  Related data: </p><i>Involved internal stages - </i><strong>Initial Seeds</strong><br /><i>Task ID in the paper - </i><strong>71</strong>
+  Stage(s): Initial Seeds
+  Task type: Distribution
+  Type of data analysis: Percentage of structural similarities between initial seeds (no fuzzing run is required for data collection) 
+- Task ID: 72
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>selection frequency</strong> - refers to the number of times a seed is selected by the search strategy during the fuzzing campaign</li></ul></p><i>Involved internal stages - </i><strong>Search Strategy</strong><br /><i>Task ID in the paper - </i><strong>72</strong>
+  Stage(s): Search Strategy
+  Task type: Direct
+  Type of data analysis: Visualize the <u>selection frequency</u> of each seed (data is collected from a single fuzzing run)
+- Task ID: 73
+  Related data: </p><i>Involved internal stages - </i><strong>Search Strategy</strong><br /><i>Task ID in the paper - </i><strong>73</strong>
+  Stage(s): Search Strategy
+  Task type: Distribution
+  Type of data analysis: Distribution of selection order frequency between the seeds across different search strategies (data is collected from multiple fuzzing runs with different search strategy configurations)
+- Task ID: 117
+  Related data: </p><i>Involved internal stages - </i><strong>Search Strategy</strong><br /><i>Task ID in the paper - </i><strong>117</strong>
+  Stage(s): Search Strategy
+  Task type: Distribution
+  Type of data analysis: Distribution of selection order frequency between the seeds 
+- Task ID: 74
+  Related data: </p><i>Involved internal stages - </i><strong>Search Strategy</strong><br /><i>Task ID in the paper - </i><strong>74</strong>
+  Stage(s): Search Strategy
+  Task type: Direct
+  Type of data analysis: Distribution of favored seeds measured in terms of seed priority over time (data is collected from a single fuzzing run)
+- Task ID: 75
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule</strong><br /><i>Task ID in the paper - </i><strong>75</strong>
+  Stage(s): Power Schedule
+  Task type: Distribution
+  Type of data analysis: Distribution of <u>energy assignment</u> per seed over time (data is collected from a single fuzzing run) 
+- Task ID: 76
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule</strong><br /><i>Task ID in the paper - </i><strong>76</strong>
+  Stage(s): Power Schedule
+  Task type: Distribution
+  Type of data analysis: Visualize the distribution of <u>energy assignment</u>s across different power schedules (data is collected from a multiple fuzzing runs with different power schedule configurations) 
+- Task ID: 77
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>energy assignment</strong> - refers to energy assigned to the mutant by the power schedule strategy</li></ul></p><i>Involved internal stages - </i><strong>Power Schedule</strong><br /><i>Task ID in the paper - </i><strong>77</strong>
+  Stage(s): Power Schedule
+  Task type: Distribution
+  Type of data analysis: Distribution of <u>energy assignment</u>s across all seeds (data is collected from a single fuzzing run)
+- Task ID: 78
+  Related data: </p><i>Involved internal stages - </i><strong>Power Schedule</strong><br /><i>Task ID in the paper - </i><strong>78</strong>
+  Stage(s): Power Schedule
+  Task type: Time-dependent
+  Type of data analysis: Visualize the power schedule startegy changes across seeds overtime (data is collected from a single fuzzing run)
+- Task ID: 79
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Mutations</strong><br /><i>Task ID in the paper - </i><strong>79</strong>
+  Stage(s): Mutations
+  Task type: Direct
+  Type of data analysis: Compare the number of mutants generated for different <u>mutation operator</u>s (data is collected from a single fuzzing run) 
+- Task ID: 80
+  Related data: </p><i>Involved internal stages - </i><strong>Mutations</strong><br /><i>Task ID in the paper - </i><strong>80</strong>
+  Stage(s): Mutations
+  Task type: Direct
+  Type of data analysis: Visualize the number of mutants generated in total (data is collected from a single fuzzing run) 
+- Task ID: 81
+  Related data: </p><i>Involved internal stages - </i><strong>Mutations</strong><br /><i>Task ID in the paper - </i><strong>81</strong>
+  Stage(s): Mutations
+  Task type: Direct
+  Type of data analysis: Visualize the mutated parts of the seeds (data is collected from a single fuzzing run)
+- Task ID: 82
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li><li><strong>mutation efficacy</strong> - measured in number of acceptances of the mutant assuming that the target provides feedback on whether a mutant is accepted or not</li></ul></p><i>Involved internal stages - </i><strong>Mutations</strong><br /><i>Task ID in the paper - </i><strong>82</strong>
+  Stage(s): Mutations
+  Task type: Direct
+  Type of data analysis: Visualize the <u>mutation efficacy</u> across different <u>mutation operator</u>s (data is collected from a single fuzzing run)
+- Task ID: 83
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Mutations</strong><br /><i>Task ID in the paper - </i><strong>83</strong>
+  Stage(s): Mutations
+  Task type: Distribution
+  Type of data analysis: Distribution of <u>mutation operator</u>s overtime (data is collected from a single fuzzing run) 
+- Task ID: 84
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation operator</strong> - refers to information about mutation operator in the fuzzer</li></ul></p><i>Involved internal stages - </i><strong>Mutations</strong><br /><i>Task ID in the paper - </i><strong>84</strong>
+  Stage(s): Mutations
+  Task type: Distribution
+  Type of data analysis: Distribution of seeds across different <u>mutation operator</u>s (data is collected from a single fuzzing run)
+- Task ID: 85
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>mutation timeline</strong> - refers to geneology of a mutant tracing back to the original initial seed. in each generation, the corresponding mutation operators should also be recorded</li></ul></p><i>Involved internal stages - </i><strong>Mutations</strong><br /><i>Task ID in the paper - </i><strong>85</strong>
+  Stage(s): Mutations
+  Task type: Time-dependent
+  Type of data analysis: Visualize the <u>mutation timeline</u> for each mutant (data is collected from a single fuzzing run) 
+- Task ID: 86
+  Related data: </p><i>Involved internal stages - </i><strong>Mutations</strong><br /><i>Task ID in the paper - </i><strong>86</strong>
+  Stage(s): Mutations
+  Task type: Time-dependent
+  Type of data analysis: Visualize the mutants that are carried to the next generation without any modifications over time (data is collected from a single fuzzing run)
+- Task ID: 87
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>87</strong>
+  Stage(s): Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> between seeds in the queue and sampled executions (data is collected from a single fuzzing run)
+- Task ID: 88
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>88</strong>
+  Stage(s): Execution
+  Task type: Comparison
+  Type of data analysis: Visualize the difference in <u>interesting behaviors</u> across multiple fuzzers (data is collected from a multiple fuzzing runs with different fuzzers executed on the same target) 
+- Task ID: 89
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>89</strong>
+  Stage(s): Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> between different seed trimming strategies (data is collected from a single fuzzing run)
+- Task ID: 90
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>90</strong>
+  Stage(s): Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> across all seeds (data is collected from a single fuzzing run)
+- Task ID: 119
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>119</strong>
+  Stage(s): Execution
+  Task type: Comparison
+  Type of data analysis: Comparison of <u>interesting behaviors</u> between sampled executions
+- Task ID: 91
+  Related data: </p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>91</strong>
+  Stage(s): Execution
+  Task type: Direct
+  Type of data analysis: Visualize the number and duration of executions of all seeds (data is collected from a single fuzzing run) 
+- Task ID: 118
+  Related data: </p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>118</strong>
+  Stage(s): Execution
+  Task type: Direct
+  Type of data analysis: Visualize the coverage of each input
+- Task ID: 92
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>bottlenecks</strong> - refers to the source code regions where fuzzer is stuck and cannot generate inputs to bypass the corresponding region</li></ul></p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>92</strong>
+  Stage(s): Execution
+  Task type: Direct
+  Type of data analysis: Visualize the coverage <u>bottlenecks</u> in the source code (data is collected from a single fuzzing run)
+- Task ID: 93
+  Related data: </p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>93</strong>
+  Stage(s): Execution
+  Task type: Distribution
+  Type of data analysis: Distribution of interesting behaviours across inputs (data is collected from a single fuzzing run)
+- Task ID: 94
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>filtered seeds</strong> - refers to the mutants that are not added back to the corpus during execution</li></ul></p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>94</strong>
+  Stage(s): Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between <u>filtered seeds</u> and interesting behaviours (data is collected from a single fuzzing run)
+- Task ID: 95
+  Related data: </p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>95</strong>
+  Stage(s): Execution
+  Task type: Relationship
+  Type of data analysis: Relationship between the edges in the coverage map and the source code regions (data is collected from a single fuzzing run)
+- Task ID: 96
+  Related data: <i>Data descriptions - </i><p><ul><li><strong>interesting behaviors</strong> - refers to different metrics that are collected at runtime such as coverage, execution time, execution speed, resource consumption, time to generate a seed, total number of seeds</li></ul></p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>96</strong>
+  Stage(s): Execution
+  Task type: Time-dependent
+  Type of data analysis: Visualize <u>interesting behaviors</u> of seeds over time (data is collected from a single fuzzing run) 
+- Task ID: 97
+  Related data: </p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>97</strong>
+  Stage(s): Execution
+  Task type: Time-dependent
+  Type of data analysis: Visualize the runtime data-flow dependencies over time (data is collected from a single fuzzing run)
+- Task ID: 120
+  Related data: </p><i>Involved internal stages - </i><strong>Execution</strong><br /><i>Task ID in the paper - </i><strong>120</strong>
+  Stage(s): Execution
+  Task type: Time-dependent
+  Type of data analysis: Visualize the execution speed over time
